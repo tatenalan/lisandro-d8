@@ -7,7 +7,7 @@ knex.schema.createTable('products', table => {
     table.increments('id')
     table.string('title')
     table.integer('price')
-    table.string('thumbnail')
+    table.string('thumbnail', 400)
 })
 
     // Hacemos promesas y cerramos la consulta
